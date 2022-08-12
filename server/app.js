@@ -8,9 +8,12 @@ console.log(process.env.API);
 const app = express()
 const port = 3000
 
+//use cors else get cors error
 app.use(cors())
+
+//serve index html
 app.get('/', (req, res) => {
-  res.sendFile("C:\\\Users\\\joshu\\\Desktop\\\web app\\\weather-app-main\\\index.html");
+  res.sendFile("static\\\index.html");
 })
 
 app.get('/api/weather', async(req, res) => {
