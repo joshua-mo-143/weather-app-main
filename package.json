@@ -8,6 +8,6 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "http-server ./static && node ./server/app.js"
+    "start": "http-server ./static && ./server/app.js"
   }
 }
